@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #0b1120;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(56, 189, 248, 0.28);
+  color: #f8fafc;
+}
+
+/* Tab button interaction */
+.macro-tab-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.macro-tab-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(2, 6, 23, 0.22);
+}
+
+.macro-tab-button:focus-visible {
+  outline: 2px solid rgba(125, 211, 252, 0.72);
+  outline-offset: 4px;
+}
+
+/* Primary action */
+.macro-primary-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.macro-primary-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(14, 165, 233, 0.28);
+}
+
+.macro-primary-button:focus-visible {
+  outline: 2px solid rgba(125, 211, 252, 0.72);
+  outline-offset: 4px;
+}
+
+/* hide scrollbar but keep scroll on touch/trackpad */
+.macro-tab-button::-webkit-scrollbar,
+.macro-tab-button::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+/* container scrollbar hiding fallback */
+.macro-tab-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
