@@ -53,7 +53,7 @@ select {
   outline-offset: 4px;
 }
 
-/* Primary action */
+/* Primary action button */
 .macro-primary-button {
   -webkit-appearance: none;
   appearance: none;
@@ -69,13 +69,13 @@ select {
   outline-offset: 4px;
 }
 
-/* hide scrollbar but keep scroll on touch/trackpad */
+/* hide scrollbar but keep scroll on touch/trackpad active */
 .macro-tab-button::-webkit-scrollbar,
 .macro-tab-button::-webkit-scrollbar-thumb {
   display: none;
 }
 
-/* container scrollbar hiding fallback */
+/* container scrollbar hiding fallback animation */
 .macro-tab-scroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
