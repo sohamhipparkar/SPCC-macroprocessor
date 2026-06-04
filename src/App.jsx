@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+//Tabs with id, label, icon, and hint for accessibility and user guidance
 const TABS = [
   { id: "define", label: "Define", icon: "＋", hint: "Create a macro" },
   { id: "expand", label: "Expand", icon: "▶", hint: "Resolve a call" },
