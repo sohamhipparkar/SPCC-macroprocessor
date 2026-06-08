@@ -12,6 +12,7 @@ const TABS = [
 function Toast({ message, type }) {
   if (!message) return null;
 
+  //styles are defined here to keep the component self-contained, but could be extracted if needed
   const styles = {
     success: {
       background: "rgba(16, 185, 129, 0.14)",
